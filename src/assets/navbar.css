@@ -1,0 +1,12 @@
+.nav{
+    display: flex;
+    justify-content: center;
+}
+.nav article{
+    margin: 20px 40px 20px 40px;
+    text-align: center;
+}
+
+.nav article div img{
+    width: 70px;
+}

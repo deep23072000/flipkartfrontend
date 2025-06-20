@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2874f0;
+  padding: 10px 20px;
+  color: white;
+  flex-wrap: wrap;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.flipkart-text {
+  font-size: 20px;
+}
+
+.explore {
+  font-size: 12px;
+  color: #fff;
+}
+
+.plus {
+  color: #ffe500;
+  font-weight: bold;
+}
+
+.search-bar {
+  display: flex;
+  flex: 1;
+  max-width: 500px;
+  margin: 10px;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 2px 0 0 2px;
+}
+
+.search-bar button {
+  background-color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 0 2px 2px 0;
+  cursor: pointer;
+}
+
+.search-bar button i {
+  color: #2874f0;
+}
+
+.hamburger {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+  color: white;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.login-btn {
+  background-color: white;
+  color: #2874f0;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .search-bar {
+    flex: 100%;
+    margin: 10px 0;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a, .login-btn {
+    width: 100%;
+    text-align: left;
+    padding: 10px 0;
+  }
+}
