@@ -18,7 +18,7 @@ const VerifyOTP = () => {
 
       if (res.data.success) {
         alert("Login successful");
-        nav("/"); // or wherever you want to redirect
+        nav("/mypage"); // or wherever you want to redirect
       } else {
         alert(res.data.message || "Verification failed");
       }

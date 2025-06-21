@@ -5,6 +5,7 @@ import Login from "./pages/login.jsx"
 import Registration from "./pages/registration.jsx"
 import VerifyOTP from "./pages/otp.jsx"
 import Home from "./pages/home.jsx"
+import Mypage from "./pages/mypage.jsx"
 
 const App = ()=>{
   return(
@@ -16,6 +17,7 @@ const App = ()=>{
       <Routes>
         <Route path="/login" element={<Login></Login>}></Route>
         <Route path="/" element={<Home></Home>}></Route>
+        <Route path="/mypage" element={<Mypage></Mypage>}></Route>
         <Route path="/registration" element={<Registration></Registration>}></Route>
         <Route path="/otp" element={<VerifyOTP></VerifyOTP>}></Route>
       </Routes>
